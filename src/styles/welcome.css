@@ -1,0 +1,19 @@
+#welp{
+  background: #d0c9c9;
+}
+#welimg{
+
+background-image: url(../img/welcome.jpg);
+background-size: contain;
+border-radius: 50%;
+  height: 410px;
+  width: 339px;
+margin-top: 8%;
+}
+
+#welText{
+  background: #d0c9c9;
+}
+#welText h2{
+  width: 400px;
+}

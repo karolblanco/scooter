@@ -1,0 +1,104 @@
+
+#container{
+  background-image: url(../img/scooter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  text-align: center;
+  margin-top: 4%;
+}
+
+#texto{
+  background: rgba(0,0,0,0);
+  border-style: none;
+  margin-top: 16px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+   align-items: center;
+   display: flex;
+
+}
+
+#textoAnim{
+  margin-top: 15%;
+  color: #B5B0B0;
+
+}
+#blinking {
+  font-size: 70px;
+  animation: blinkingText 1.2s infinite;
+}
+
+#cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  font-size: 70px;
+}
+
+#cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+
+#blc {
+  font-size: 70px;
+}
+
+#cd-words-wrapper b #is-visible {
+  position: relative;
+}
+
+#cd-headline .clip span {
+  display: inline-block;
+  padding: .2em 0;
+}
+
+#cd-headline .clip #cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+
+#cd-headline .clip b {
+  opacity: 0;
+}
+
+#cd-headline b.is-visible {
+  opacity: 1;
+  font-weight: 900;
+}
+
+#is-visible, .blc {
+  color:#d0c9c9;
+}
+
+
+.animated-text {
+  transform: scale(0.5);
+}
+#texto{
+  transform: scale(0.5);
+}
+
+@media (min-width: 768px) {
+  #texto {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 576px) {
+  #texto {
+    transform: scale(0.3);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+}
+
+.noSelect {
+  pointer-events: none;
+}
