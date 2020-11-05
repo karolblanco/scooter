@@ -6,13 +6,17 @@
   height: 750px;
   text-align: center;
   margin-top: 4%;
-}
 
-#texto{
+}
+#container p{
+  color: #B5B0B0;
+  
+}
+#texto {
   background: rgba(0,0,0,0);
   border-style: none;
   margin-top: 16px;
-  width: 50%;
+  width: 60%;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -21,9 +25,12 @@
 
 }
 
-#textoAnim{
+#textoanim{
   margin-top: 15%;
   color: #B5B0B0;
+    font-size: 70px;
+
+
 
 }
 #blinking {

@@ -1,37 +1,35 @@
+import Scooter from '../img/scooter.png'
 import '../styles/animation.css';
 import React from 'react'
+import Typical from 'react-typical'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function animation(){
 
   return(
+    <div id="container">
+          <div id="texto" className="animation">
+            <header id="textoanim" className="animation-header">
 
-  <div id="container">
-  <div className="row">
-    <div className="col-lg-8 mx-auto">
-
-      <div id="texto" className="text-nowrap  noSelect" >
-
-        <div  id="caption v-middle text-center">
-          <h1  id="cd-headline" className="clip">
-            <span  id="blc">New </span>
-            <span id="cd-words-wrapper">
-              <b  id="is-visible">Scooter</b>
-              <b>Transportation</b>
-              <b>Life.</b>
-            </span>
-            <span id="blinking">|</span>
-          </h1>
+            <p> New  {' '}
+            <Typical
+            loop={Infinity}
+            wrapper="b"
+            steps={[
+              'Scooter',
+              1000,
+              'Transportation',
+              1000,
+              'Life.',
+              1000
+            ]}
+            />
+            </p>
+            </header>
+          </div>
+          <p id="texto"className="intro-text">A new environmentally&nbsp;friendly&nbsp;way of transporting</p>
+          <a className="btn btn-link btn-circle" role="button" href="#about"><i className="fa fa-angle-double-down animated"></i></a>
         </div>
-
-      </div>
-
-      <p id="textoAnim" className="intro-text" >A new environmentally&nbsp;friendly&nbsp;way of transporting</p>
-      <a className="btn btn-link btn-circle" role="button" href="#about">
-      <i className="fa fa-angle-double-down animated"></i></a>
-    </div>
-  </div>
-</div>
 
 
   );
